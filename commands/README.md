@@ -27,5 +27,5 @@ terraform state list
 **Mark resource to be destroyed and recreated on the next apply**
 
 ```shell script
-
+terraform taint 'aws_instance.myinstance'
 ```
