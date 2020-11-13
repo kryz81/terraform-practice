@@ -16,3 +16,9 @@ resource aws_instance "myinstance" {
   instance_type = "t2.nano"
 }
 ```
+
+**Change resource name (terraform key) without recreating it**
+
+```shell script
+terraform state mv aws_instance.myinstance aws_instance.web
+```
