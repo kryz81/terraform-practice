@@ -29,3 +29,9 @@ terraform state list
 ```shell script
 terraform taint 'aws_instance.myinstance'
 ```
+
+**Check changes to be applied without refreshing remote state**
+
+```shell script
+terraform plan --refresh=false
+```
