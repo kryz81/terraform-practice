@@ -1,3 +1,9 @@
+terraform {
+  required_providers {
+    aws = "~>3.14"
+  }
+}
+
 provider "aws" {
   region = "eu-central-1"
   alias  = "eu"

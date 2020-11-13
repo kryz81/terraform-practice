@@ -25,3 +25,22 @@ resource "aws_instance" "ec2-eu" {
   provider = aws.eu
 }
 ```
+
+**Restrict all provider blocks to specific provider version**
+
+```hcl-terraform
+terraform {
+  required_providers {
+    aws = "~>3.14.1"
+  }
+}
+```
+
+**Enable providers (plugins) caching to avoid fetching the same plugin multiple times**
+
+```shell script
+TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache" terraform init
+
+# or in config file:
+# plugin_cache_dir   = "$HOME/.terraform.d/plugin-cache"
+```
