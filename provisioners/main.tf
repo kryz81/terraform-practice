@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "myinstance" {
-  ami = "ami-0c960b947cbb2dd16"
+  ami           = "ami-0c960b947cbb2dd16"
   instance_type = "t2.nano"
 
   provisioner "local-exec" {
@@ -12,7 +12,7 @@ resource "aws_instance" "myinstance" {
 
   provisioner "file" {
     # insert content into file
-    content = "ami used: ${self.ami}"
+    content     = "ami used: ${self.ami}"
     destination = "/home/ubuntu/ami.txt"
   }
 }

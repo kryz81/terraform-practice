@@ -21,7 +21,7 @@ resource "aws_instance" "ec2-eu" {
 }
 
 resource "aws_instance" "ec2-us" {
-  ami           = "ami-0c960b947cbb2dd16"
+  ami           = "ami-0885b1f6bd170450c"
   instance_type = "t2.micro"
   provider      = aws.us
 }
