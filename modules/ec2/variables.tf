@@ -7,6 +7,6 @@ variable "instance_type" {
 }
 
 variable "instance_name" {
-  type = string
+  type    = string
   default = "[default ec2]"
 }
