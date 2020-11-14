@@ -23,4 +23,3 @@ join(",", ["a", "b", "c"])
 ```
 file("myfile.txt")
 ```
-
