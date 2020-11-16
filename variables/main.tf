@@ -18,8 +18,8 @@ variable "ssh_port" {
   default = 22
 }
 
-variable  "mytuple" {
-  type = tuple([string, number, bool])
+variable "mytuple" {
+  type    = tuple([string, number, bool])
   default = ["Test", 39, true]
 }
 
