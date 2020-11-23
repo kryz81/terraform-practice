@@ -38,3 +38,9 @@ terraform workspace new mynewwork1
 ```shell script
 terraform workspace delete mynewwork1
 ```
+
+**Find state of custom workspace**
+
+```shell script
+ls terraform.tfstate.d/<namespace name>
+```
