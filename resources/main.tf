@@ -2,7 +2,7 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-resource aws_instance "web" {
+resource aws_instance "web_server" {
   # create 3 ec2 instances
   count = 3
 

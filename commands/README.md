@@ -1,6 +1,6 @@
 ## Useful commands
 
-**Format all files in current directory und all subdirectories**
+**Format all files in current directory and all subdirectories**
 
 ```shell script
 terraform fmt -recursive
