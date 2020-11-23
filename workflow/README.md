@@ -35,3 +35,9 @@ terraform apply
 ```shell script
 terraform destroy
 ```
+
+**Generate plan and save it to file**
+
+```shell script
+terraform plan -out <file>
+```
