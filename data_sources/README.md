@@ -4,11 +4,22 @@
 
 ```hcl-terraform
 data "aws_vpc" "web" {
-  id = "vpc-0ac07b47cb305021f"
+  filter {
+    name    = "tag:Name"
+    values  = ["web"]
+  }
 }
 
-output "web_vpc_id" {
-  description = "CIDR block of web vpc"
-  value       = data.aws_vpc.web.cidr_block
+```
+
+**User regex to find resource**
+
+```hcl-terraform
+data "aws_vpc" "web" {
+  filter {
+    name    = "tag:Name"
+    values  = ["/web/"]
+    regex   = true
+  }
 }
 ```
