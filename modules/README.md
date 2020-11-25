@@ -37,3 +37,12 @@ output "publicip" {
   value = module.ec2.publicicp
 }
 ```
+
+**Use a module from terraform public registry**
+
+```hcl-terraform
+module "vote_service_sg" {
+  source = "terraform-aws-modules/security-group/aws" # <namespace>-<module name>-<provider>
+  # other config items
+}
+```
